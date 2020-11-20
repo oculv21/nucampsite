@@ -1,3 +1,4 @@
+// @ts-nocheck
 $(function() {
    $(".carousel").carousel( { interval: 2000 } );
    $("#carouselButton").click(function(){
@@ -13,11 +14,13 @@ $(function() {
    });
 
    //Modal Buttons
-   $("#reserveButton").click(function() {
+   $("#reserveButton").click(function(){
       $("#reserveModal").modal('show');
    });
    $("#loginButton").click(function() {
       $("#loginModal").modal('show');
    });
+   
 });
+
 

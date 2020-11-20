@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
-    "lite":"lite-server",
+    "lite": "lite-server",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
@@ -19,6 +19,7 @@
   "author": "Olivia Culver",
   "license": "ISC",
   "devDependencies": {
+    "@types/bootstrap": "^5.0.0",
     "copyfiles": "^2.0.0",
     "imagemin-cli": "^3.0.0",
     "lite-server": "^2.5.4",
@@ -29,10 +30,10 @@
     "usemin-cli": "^0.5.1"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.5.0",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
